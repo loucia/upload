@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <servers>
+        <server>
+            <username>awrtm01</username>
+            <password>AKCp5dKEE9K3F7XDgRV5CzjyjViocZ61vccG9qW14QXdfKsHXrhfBaXeX2D2CdA7RwAXYzETz</password>
+            <id>central</id>
+        </server>
+        <server>
+            <username>awrtm01</username>
+            <password>AKCp5dKEE9K3F7XDgRV5CzjyjViocZ61vccG9qW14QXdfKsHXrhfBaXeX2D2CdA7RwAXYzETz</password>
+            <id>snapshots</id>
+        </server>
+        <server>
+            <username>awrtm01</username>
+            <password>AKCp5dKEE9K3F7XDgRV5CzjyjViocZ61vccG9qW14QXdfKsHXrhfBaXeX2D2CdA7RwAXYzETz</password>
+            <id>internal-maven</id>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>nexus-dt-proxy</name>
+                    <url>https://artifactory.dt.renault.com/artifactory/nexus-dt-proxy</url>
+                </repository>
+                <repository>
+                    <snapshots />
+                    <id>snapshots</id>
+                    <name>nexus-dt-proxy</name>
+                    <url>https://artifactory.dt.renault.com/artifactory/nexus-dt-proxy</url>
+                </repository>
+                <repository>
+                    <id>internal-maven</id>
+                    <name>maven-rtm</name>
+                    <url>https://artifactory.dt.renault.com/artifactory/maven-rtm</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>central</id>
+                    <name>nexus-dt-proxy</name>
+                    <url>https://artifactory.dt.renault.com/artifactory/nexus-dt-proxy</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <snapshots />
+                    <id>snapshots</id>
+                    <name>nexus-dt-proxy</name>
+                    <url>https://artifactory.dt.renault.com/artifactory/nexus-dt-proxy</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <id>artifactory</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+
+</settings>
